@@ -21,6 +21,8 @@
 		326AE4D41A8CA1A100043AA1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326AE4B61A8CA1A100043AA1 /* UIKit.framework */; };
 		326AE4DC1A8CA1A100043AA1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 326AE4DA1A8CA1A100043AA1 /* InfoPlist.strings */; };
 		326AE4DE1A8CA1A100043AA1 /* xib__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 326AE4DD1A8CA1A100043AA1 /* xib__Tests.m */; };
+		326AE4E81A8CA1E800043AA1 /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 326AE4E71A8CA1E800043AA1 /* MyView.xib */; };
+		326AE4EB1A8CA23D00043AA1 /* MJDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 326AE4EA1A8CA23D00043AA1 /* MJDog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		326AE4D91A8CA1A100043AA1 /* xib测试Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "xib测试Tests-Info.plist"; sourceTree = "<group>"; };
 		326AE4DB1A8CA1A100043AA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		326AE4DD1A8CA1A100043AA1 /* xib__Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xib__Tests.m; sourceTree = "<group>"; };
+		326AE4E71A8CA1E800043AA1 /* MyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
+		326AE4E91A8CA23D00043AA1 /* MJDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MJDog.h; path = ../MJDog.h; sourceTree = "<group>"; };
+		326AE4EA1A8CA23D00043AA1 /* MJDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MJDog.m; path = ../MJDog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +122,11 @@
 				326AE4C41A8CA1A100043AA1 /* Main.storyboard */,
 				326AE4C71A8CA1A100043AA1 /* MJViewController.h */,
 				326AE4C81A8CA1A100043AA1 /* MJViewController.m */,
+				326AE4E91A8CA23D00043AA1 /* MJDog.h */,
+				326AE4EA1A8CA23D00043AA1 /* MJDog.m */,
 				326AE4CA1A8CA1A100043AA1 /* Images.xcassets */,
 				326AE4B91A8CA1A100043AA1 /* Supporting Files */,
+				326AE4E71A8CA1E800043AA1 /* MyView.xib */,
 			);
 			path = "xib测试";
 			sourceTree = "<group>";
@@ -229,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326AE4E81A8CA1E800043AA1 /* MyView.xib in Resources */,
 				326AE4CB1A8CA1A100043AA1 /* Images.xcassets in Resources */,
 				326AE4BD1A8CA1A100043AA1 /* InfoPlist.strings in Resources */,
 				326AE4C61A8CA1A100043AA1 /* Main.storyboard in Resources */,
@@ -253,6 +262,7 @@
 				326AE4BF1A8CA1A100043AA1 /* main.m in Sources */,
 				326AE4C91A8CA1A100043AA1 /* MJViewController.m in Sources */,
 				326AE4C31A8CA1A100043AA1 /* MJAppDelegate.m in Sources */,
+				326AE4EB1A8CA23D00043AA1 /* MJDog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

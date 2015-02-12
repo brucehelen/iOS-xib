@@ -10,6 +10,7 @@
 
 @interface MJViewController ()
 
+@property MJDog *myDog;
 @end
 
 @implementation MJViewController
@@ -17,13 +18,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    _myDog = [[MJDog alloc] init];
+	
+    NSArray * array = [[NSBundle mainBundle] loadNibNamed:@"MyView" owner: _myDog options:nil];
+    UIView *view = array[0];
+    
+    UIButton *button = (UIButton*)[view viewWithTag:10];
+    [button addTarget:_myDog action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:view];
 }
 
-- (void)didReceiveMemoryWarning
+- (void) btnClick
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    NSLog(@"btnClick---");
 }
+
 
 @end
