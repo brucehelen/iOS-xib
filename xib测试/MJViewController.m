@@ -23,7 +23,7 @@
 	
     NSArray * array = [[NSBundle mainBundle] loadNibNamed:@"MyView" owner: _myDog options:nil];
     UIView *view = array[0];
-    
+    view.center = CGPointMake(self.view.frame.size.width * 0.5, 100);
     UIButton *button = (UIButton*)[view viewWithTag:10];
     [button addTarget:_myDog action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     
